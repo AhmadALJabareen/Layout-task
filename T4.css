@@ -1,0 +1,47 @@
+body{
+    text-align: center;
+}
+.container{
+    display: grid;
+    gap: 8px;
+    grid-template-areas:
+    "a a a a"
+    "b b c c"
+    "d d d d"
+    ;
+    grid-template-rows: 1fr 4fr 1fr ;
+    grid-template-columns:1fr 1fr 4fr 4fr;
+}
+.container > *{
+    color: #ffffff;
+    padding: 8px;
+    
+}
+#a{
+    background-color: rgb(27, 221, 221);
+    grid-area: a;
+}
+#b{
+    background-color: rgb(42, 179, 8);
+    grid-area: b;
+}
+#c{
+    background-color: rgb(221, 121, 27);
+    grid-area: c;
+}
+#d{
+    background-color: rgb(27, 221, 221);
+    grid-area: d;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.child{
+    width: 75px;
+    height: 75px;
+    background-color: rgb(221, 121, 74);
+    padding: 10px;
+    
+}
